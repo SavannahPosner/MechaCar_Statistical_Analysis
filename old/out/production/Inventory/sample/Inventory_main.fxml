@@ -3,8 +3,7 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
-<AnchorPane prefHeight="600.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.View_Controller.Inventory_mainController">
+<AnchorPane prefHeight="600.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.View_Controller.Inventory_mainController">
     <children>
         <VBox prefHeight="515.0" prefWidth="940.0" spacing="15">
             <children>
@@ -33,7 +32,7 @@
                                 <HBox alignment="TOP_RIGHT" spacing="5">
                                     <Button fx:id="add_part" onAction="#pushToAddPartsForm">Add</Button>
                                     <Button fx:id="modify_part" onAction="#pushToModifyPartsForm">Modify</Button>
-                                    <Button fx:id="delete_part" onAction="#deletePart" text="Delete">Delete</Button>
+                                    <Button fx:id="delete_part" onAction="#deletePart">Delete</Button>
                                     <padding>
                                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                     </padding>

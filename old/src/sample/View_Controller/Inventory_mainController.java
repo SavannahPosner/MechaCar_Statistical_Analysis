@@ -378,7 +378,6 @@ public class Inventory_mainController implements Initializable {
             parts_table.getItems().remove(selectedPart);
             parts_table.refresh();
             inventory.deletePart(selectedPart);
-            alertBox("You have successfully deleted this part");
         } else {
             alertBox("Please select part to delete");
         }
@@ -398,7 +397,6 @@ public class Inventory_mainController implements Initializable {
                 inventory.getAllProducts().remove(selectedProduct);
                 products_table.getItems().remove(selectedProduct);
                 products_table.refresh();
-                alertBox("You have successfully deleted this product");
             } else {
                 alertBox("Product has Associated Parts Cannot be Deleted");
             }
